@@ -1,0 +1,46 @@
+class Aluno
+{
+    public string nomeAluno;
+    public double nota1Bimestre;
+    public double nota2Bimestre;
+    public double media;
+    public double faltas;
+    public string status;
+    public bool isSemestreFinalizado;
+
+    public Aluno(string nomeAluno)
+    {
+        this.nomeAluno = nomeAluno;
+    }
+
+    public void AtribuirNota1(double nota1Bimestre)
+    {
+        this.nota1Bimestre = nota1Bimestre;
+    }
+
+    public void AtribuirNota2(double nota2Bimestre)
+    {
+        this.nota2Bimestre = nota2Bimestre;
+    }
+
+    public void CalcularMedia()
+    {
+        media = (nota1Bimestre + nota2Bimestre) / 2;
+    }
+
+    public void AtribuirFalta()
+    {
+        faltas++;
+    }
+
+    public void AbonarFalta()
+    {
+        faltas--;
+    }
+
+
+
+
+
+}
+
