@@ -1,0 +1,17 @@
+class AlunoPrograma
+{
+    static void Main(string[] args)
+    {
+        Aluno aluno = new Aluno("Enzo");
+
+        aluno.AtribuirNota1(7);
+        aluno.AtribuirNota2(6.9);
+        aluno.CalcularMedia();
+        aluno.AtribuirFalta();
+        aluno.AbonarFalta();
+
+
+        Console.WriteLine("O aluno" + aluno.nomeAluno + "Possui"
+            + aluno.faltas + "falta(s) e" + aluno.media + "de media");
+    }
+}
